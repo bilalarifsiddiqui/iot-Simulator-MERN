@@ -1,0 +1,65 @@
+.status-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.status-table th,
+.status-table td {
+  padding: 10px;
+}
+
+.status-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.status-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.status-table tr:hover {
+  background-color: #e6e6e6;
+}
+
+.status-table td {
+  border-bottom: 1px solid #ddd;
+}
+@keyframes pulse {
+  100% {
+    background-color: rgb(130, 237, 130);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pulse-green {
+  animation: pulse 1s linear, fade 4s linear 1s;
+}
+
+.status-table-container {
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
